@@ -1,0 +1,92 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+    /* font-family: 'Itim', cursive; */
+    font-family: 'Turret Road', cursive;
+}
+.icon {
+    margin-top: -60px;
+    margin-bottom: -30px;
+}
+
+.img {
+    background-image: url("../css/weather.png");
+    height: 100px;
+    width: 200px;
+    background-position: center;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.main {
+    height: 100%;
+    background-image: url("../css/main.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.inputs {
+    margin-top: 50px;
+}
+footer{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: black;
+    font-family: 'Itim', cursive;
+
+}
+.oops{
+    background-image: url("../css/opps.png");
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+    background-size: 220px;
+    margin-top: -20px;
+    /* background-color: blanchedalmond; */
+}
+
+@media(max-width: 550px){
+    h1{
+        font-size: 22px;
+    }
+    .main {
+        height: 100%;
+        background-image: url("../css/main-mobile.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    footer{
+        /* position: absolute;
+        bottom: 15px; */
+        width: 100%;
+        right: 0px;
+        
+    }
+    footer h6{
+        /* position: absolute;
+        bottom: 15px; */
+        color: white;
+    
+    }
+    .temp {
+        font-size: 30px;
+    }
+    .notfound{
+        margin-top: -25px;
+        font-size: 35px;
+    }
+    
+}

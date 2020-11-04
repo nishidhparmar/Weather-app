@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Itim&family=Turret+Road:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="css/weather.png" type="image/x-icon">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="main">
+        
+        <div class="container text-center">
+            <div class="img"><h5 style="margin-top: 110px;">Weather App</h1></div>
+            
+            <h1>Weather for state or city</h1>
+            <form action="/Weather" method="post">
+                <div class="input-group mt-3 mb-3">
+                    <input type="text" name="city" class="form-control" placeholder="State/City" autocomplete="off" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <button type="submit" class="btn btn-info ml-2">Search</button>
+
+                </div>
+            </form>
+            <h1>Weather for area</h1>
+            <form action="/Area_Weather" method="post">
+                <div class="input-group mt-3 ">
+                    <input type="text" name="zipcode" class="form-control" placeholder="Zipcode" autocomplete="off" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <button type="submit" class="btn btn-info ml-2">Search</button>
+
+                </div>
+            </form>
+            <footer>
+                <h6>made with &#x1F5A4; by Nishidh Parmar</h6>
+            </footer>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
